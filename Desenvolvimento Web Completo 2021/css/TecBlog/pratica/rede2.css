@@ -1,0 +1,47 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+	font-size: 3em;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #CCC;
+	font-size: 0.8em;
+}
+
+a{
+	text-decoration: none;
+}
+
+#tec{
+	color: black;
+}
+
+#top{
+	background: orange;
+	text-align: center;
+	color: white;
+	font-size: 125%;
+	padding: 0.8em;
+}
+
+#topo{
+	padding: 10px;
+	margin: 8px ;
+}
+
+#topo a:link, #topo a:visited{
+	color: white;
+	padding: 0.3em;
+
+}
+
+#topo a:hover{
+	background: white;
+	color: orange;
+	padding: 0.3em;
+}

@@ -1,0 +1,33 @@
+*{
+	font-family: sans-serif;
+}
+
+table{
+	border-collapse: separate; /*collapse*/
+}
+
+table td, th{
+	width: 250px;
+	padding: 7px;
+
+}
+
+th{
+	text-transform: uppercase;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #111;
+	text-align: left;
+	letter-spacing: 0.1em;
+}
+
+tr.alternado{
+	background-color: #efefef;
+}
+
+td.direita{
+	text-align: right;
+}
+
+tr:hover{
+	background-color: #c3e6e5;
+}

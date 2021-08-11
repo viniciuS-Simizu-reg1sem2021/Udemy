@@ -1,0 +1,66 @@
+/*
+
+ul {
+	
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	padding: 5px 20px;
+	background: url(imagens/seta.png) no-repeat left center;
+}
+
+
+*{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	
+}
+
+ul a{
+	width: 200px;
+	height: 40px;
+	display: block;
+	background: #f7b600 url(imagens/menu.png) left bottom;
+	text-decoration: none;
+	color: #000;
+	text-indent: 40px;
+	line-height: 40px;
+
+}
+
+a:hover{
+	background-position: right bottom;
+	background-color: #f99200
+	color: #fff
+}
+
+#home #navegação .home a,
+#sobre #navegação .sobre a,
+#serviços #navegação .serviços a {
+	background-position: right bottom;
+	background-color: #f99200
+	color: #fff
+}
+*/
+
+ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	width: 720px;
+	background: #fff url(imagens/fundo-horizontal.png) repeat-x;
+}
+
+ul a{
+	line-height: 2em;
+	display: block;
+	
+}

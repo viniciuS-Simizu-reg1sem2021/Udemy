@@ -1,0 +1,57 @@
+@keyframes animacao-caixa{
+    from { /*Estado Inicial */
+        background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {/* Estado Final */
+        background: green;
+        border-radius: 150px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+@-webkit-keyframes animacao-caixa{
+    from { /*Estado Inicial */
+        background: red;
+    }
+    to {/* Estado Final */
+        background: green;
+    }
+}
+
+@-moz-keyframes animacao-caixa{
+    from { /*Estado Inicial */
+        background: red;
+    }
+    to {/* Estado Final */
+        background: green;
+    }
+}
+
+@-o-keyframes animacao-caixa{
+    from { /*Estado Inicial */
+        background: red;
+    }
+    to {/* Estado Final */
+        background: green;
+    }
+}
+
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: red;
+    /*animation-name: animacao-caixa;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;*/
+
+    animation: animacao-caixa 5s 3s 2 alternate;
+    -webkit-animation: animacao-caixa 5s 3s 2 alternate;
+    -moz-animation: animacao-caixa 5s 3s 2 alternate;
+    -o-animation: animacao-caixa 5s 3s 2 alternate;
+}

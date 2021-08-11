@@ -1,0 +1,42 @@
+body{
+	background: gray url(imagens/fundo.png);
+	font:16px Arial, Helvetica, sans-serif;
+}
+
+#principal {
+	width: 900px;
+}
+
+#navegaçao {
+	background: #c5c5b2;
+	padding: 18px;
+
+}
+
+a{
+	color: #4b556a;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 15px
+
+}
+
+#texto1 {
+	color:#FBFAFA;
+	background:#040404;
+	padding:10px;
+}
+
+.direitos{
+	text-align: center;
+
+}
+
+.imagem{
+	border: #707474 solid 10px;
+}
+
+#info{
+	color:#494747;
+	padding: 8px
+}
