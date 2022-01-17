@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <script>
+        var data = new Date();
+
+        document.write(data.getDate() + "/" + (data.getMonth() + 1) + "/" + data.getFullYear() + "<br>");
+        document.write(data.toString() + "<hr>");
+
+        data.setDate(data.getDate() + 1);
+        document.write(data.toString() + "<hr>");
+
+        data.setMonth(data.getMonth() + 1);
+        document.write(data.toString() + "<hr>");
+
+        data.setFullYear(data.getFullYear() + 1);
+        document.write(data.toString() + "<hr>");
+
+        // 31/01/2020
+        var data1 = new Date(2020, 0, 31);
+
+        // 23/02/2017
+        var data2 = new Date(2017, 1, 23);
+
+        document.write(data1.toString() + "<hr>" + data2.toString() + "<hr>");
+
+        // Converter data possibilitando calculos
+        document.write(data1.getTime() + "<hr>" + data2.getTime() + "<hr>");
+
+        // 1 de Janeiro de 1970
+
+        document.write("1 dia tem: " + (1 * 24 * 60 * 60 * 1000) + " milisegundos<hr>");
+
+        // Encontrar a quantidade de milisegundos da data1 até a data2
+
+        var milisegundos_entre_dias = Math.abs(data.getTime() - data1.getTime());
+
+        var milisegundos_por_dia = 1000 * 60 * 60 * 24;
+
+        document.write("A diferença entre hoje e a data1 é de "+ Math.ceil(milisegundos_entre_dias / milisegundos_por_dia) + " dias<hr>");
+
+    </script>
+</body>
+
+</html>

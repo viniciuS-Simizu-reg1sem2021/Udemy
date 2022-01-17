@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipulando Estilos de Elementos HTML</title>
+
+    <script>
+        function modificaEstilo(corBG) {
+            document.getElementById("backGround").style.backgroundColor = corBG;
+        }
+    </script>
+
+</head>
+<body>
+    
+    Manipulando estilo
+    <div>
+        <span>
+            <button onclick="modificaEstilo('#FF0000')" type="button">Vermelho</button>
+        </span>
+
+        <span>
+            <button onclick="modificaEstilo('#00FF00')" type="button">Verde</button>
+        </span>
+
+        <span>
+            <button onclick="modificaEstilo('#0000FF')" type="button">Azul</button>
+        </span>
+    </div>
+    <hr>
+    <div id="backGround" style="width: 20em; height: 10em; background-color: #ccc"></div>
+
+</body>
+</html>

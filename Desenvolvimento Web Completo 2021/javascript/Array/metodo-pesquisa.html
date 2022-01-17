@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Metodo de Pesquisa de Array</title>
+
+    <script>
+
+        var listaFrutas = [];
+
+        listaFrutas.push("Banana");
+        listaFrutas.push("Maçã");
+        listaFrutas.push("Morango");
+        listaFrutas.push("Uva");
+
+        function verificaFruta(fruta) {
+            if (listaFrutas.indexOf(fruta) == -1) {
+                document.write("O elemento não existe no banco")
+            } else {
+                document.write("O elemento inserido está na posição '" + listaFrutas.indexOf(fruta) + "'")
+            }
+        }
+
+        verificaFruta("Maçã");
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
