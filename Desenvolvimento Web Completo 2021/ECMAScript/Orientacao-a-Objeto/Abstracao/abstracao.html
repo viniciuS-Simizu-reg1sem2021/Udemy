@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OO - Abstração</title>
+
+    <script>
+
+        class ContaBancaria{
+            
+            constructor(agencia, numeroConta, saldo, limite) {
+                this.agencia = "1075"
+                this.numeroConta = "8351125"
+                this.saldo = 50
+                this.limite = 450
+            }
+
+            depositar(valorDeposito) {
+                this.saldo += valorDeposito
+            }
+
+            sacar(valorSaque) {
+                this.saldo -= valorSaque
+            }
+
+            consultarSaldo() {
+                return this.saldo
+            }
+        }
+
+        let conta1 = new ContaBancaria()
+        let conta2 = new ContaBancaria()
+
+        document.write(`<hr>${conta1.consultarSaldo()}`)
+        conta1.depositar(500)
+        document.write(`<hr>${conta1.consultarSaldo()}`)
+        conta1.sacar(100)
+        document.write(`<hr>${conta1.consultarSaldo()}`)
+
+        document.write(`<br><br><br>${conta2.consultarSaldo()}`)
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

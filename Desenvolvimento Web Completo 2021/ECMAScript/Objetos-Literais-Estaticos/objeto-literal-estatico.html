@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Literal / Estático</title>
+
+    <script>
+/*
+        class Produto {
+
+            constructor(descricao, preco) {
+                this.descricao = descricao
+                this.preco = preco
+            }
+
+
+            verDescricao() {
+                document.write(`${this.descricao} por apenas ${this.preco}`)
+            }
+        }
+
+        let produto = new Produto("Notebook", 2200)
+        produto.verDescricao()
+
+
+        let produtoLiteral = {
+            descricao: "Geladeira",
+            preco: 1800,
+            verDescricao: function() {
+                document.write(`${this.descricao} por apenas ${this.preco}`)
+            }
+        }
+
+        produtoLiteral.verDescricao()
+*/
+
+/*
+        let nome = "Estevan"
+        let idade = 29
+        let sexo = "Masculino"
+        let profissao = "Lutador"
+
+        let objetoES5 = {
+            nome: nome,
+            idade: idade,
+            sexo: sexo,
+            profissao: profissao,
+            exibirResumo: function() {document.write(`${this.nome}, ${this.idade} anos, ${this.sexo} é ${this.profissao}`)}
+        }
+
+        let objetoES6 = {
+            nome,
+            idadeTeste: idade,
+            sexo,
+            profissao,
+            exibirResumo() {document.write(`${this.nome}, ${this.idadeTeste} anos, ${this.sexo} é ${this.profissao}`)}
+        }
+
+        //objetoES5.exibirResumo()
+        objetoES6.exibirResumo()
+*/
+
+/*
+        let pessoa = {
+            nome: "José",
+            idade: 45
+        }
+
+        document.write(pessoa.nome)
+        document.write(pessoa.idade)
+
+        pessoa.nome = "Fer"
+        pessoa.idade = 50
+
+        document.write(pessoa.nome)
+        document.write(pessoa.idade)
+*/
+
+
+        let pessoa = {
+            nome: "Maria",
+            idade: 25
+        }
+
+        console.log(pessoa)
+
+        pessoa.sexo = "Feminino"
+
+        document.write(pessoa.sexo)
+
+        pessoa.dizerOi = () => document.write("Oi")
+
+        pessoa.dizerOi()
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

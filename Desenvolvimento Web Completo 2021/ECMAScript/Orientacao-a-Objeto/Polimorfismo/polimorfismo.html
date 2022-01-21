@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OO - Polimorfismo</title>
+
+    <script>
+
+        class Animal {
+
+            constructor(peso, cor, tamanho) {
+                this.peso = peso
+                this.cor = cor
+                this.tamanho = tamanho
+            }
+
+
+            dormir() {
+                document.write("Dormir")
+            }
+        }
+
+
+        class Passaro extends Animal {
+
+            constructor(peso, cor, tamanho, bico) {
+                super(peso, cor, tamanho)
+                this.bico = bico
+            }
+
+
+            voar() {
+                document.write("Voar")
+            }
+        }
+
+
+        class Papagaio extends Passaro {
+
+            constructor(peso, cor, tamanho, bico, sabeFalar) {
+                super(peso, cor, tamanho, bico)
+                this.sabeFalar = sabeFalar
+            }
+
+
+            falar() {
+                document.write("Falar")
+            }
+        }
+
+
+        class Avestruz extends Passaro {
+            
+            constructor(peso, cor, tamanho, bico) {
+                super(peso, cor, tamanho, bico)
+            }
+
+
+            enterrarCabeca() {
+                document.write("Enterrar a cabeça")
+            }
+
+
+            voar (){
+                return false
+            }
+        }
+
+        let papagaio = new Papagaio(350, "Verde", 25, "Médio", true)
+        let avestruz = new Avestruz(15000, "Branco e Preto", 250, "Grande")
+
+        console.log(papagaio)
+        console.log(avestruz)
+
+        avestruz.voar()
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OO - Herança</title>
+
+    <script>
+
+        class Animal {
+
+            constructor(cor, tamanho) {
+                this.cor = cor
+                this.tamanho = tamanho
+            }
+
+
+            dormir() {
+                document.write("Dormir")
+            }
+        }
+
+
+        class Cachorro extends Animal {
+            
+            constructor(cor, tamanho, orelhas) {
+                super(cor, tamanho)
+                this.orelhas = orelhas
+            }
+
+
+            correr() {
+                document.write("Correr")
+            }
+
+
+            rosnar() {
+                document.write("Rosnar")
+            }
+        }
+
+
+        class Passaro extends Animal {
+
+            constructor(cor, tamanho, bico) {
+                super(cor, tamanho)
+                this.bico = bico
+            }
+
+
+            voar() {
+                document.write("Voar")
+            }
+        }
+
+
+        class Papagaio extends Passaro {
+
+            constructor(cor, tamanho, bico, sabeFalar) {
+                super(cor, tamanho, bico)
+                this.sabeFalar = sabeFalar
+            }
+
+
+            falar() {
+                document.write("Falar")
+            }
+        }
+
+
+        let cachorro = new Cachorro("Marrom", 30, 20)
+        let passaro = new Passaro("Azul", 15, "Grande")
+        let papagaio = new Papagaio("Verde", 10, "Médio", true)
+
+        console.log(cachorro)
+        console.log(passaro)
+        console.log(papagaio)
+
+        cachorro.dormir()
+        passaro.dormir()
+        papagaio.dormir()
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

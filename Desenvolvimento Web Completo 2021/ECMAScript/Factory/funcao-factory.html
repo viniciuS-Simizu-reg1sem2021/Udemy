@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Factory</title>
+
+    <script>
+
+        let Bicicleta1 = {
+            cor: "Branca",
+            marcha: "Única",
+            aro: 12,
+            pedalar() {console.log("Pedalar executado")}
+        }
+
+// ----------------------------------------------------------------- //
+
+        // Factory
+        let BicicletaFactory = (cor, marcha, aro) => {
+            return {
+                cor,
+                marcha,
+                aro,
+                pedalar() {console.log("Pedalar executado")}
+            }
+        }
+
+        let Bicicleta2 = BicicletaFactory("Amarelo", "Única", 12)
+        let Bicicleta3 = BicicletaFactory("Branco", "18", 13)
+
+        console.log(Bicicleta2)
+        console.log(Bicicleta3)
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
