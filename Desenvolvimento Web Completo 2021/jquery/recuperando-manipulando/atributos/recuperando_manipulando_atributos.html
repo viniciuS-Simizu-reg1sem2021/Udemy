@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JQUERY</title>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script>
+			
+			$(document).ready(() => {
+				
+				$('div').attr('style', 'background-color: blue; width: 200px; height: 200px')
+				$('input').attr('type', 'password')
+				
+			})
+			
+		</script>
+	</head>
+	
+	<body style="background-color: black; color: white">
+		<img src="esfera_1.png" border="5"></img>
+		
+		<div style="background-color: red; width: 100px; height: 100px"></div>
+		<input type="text" placeholder="Eu sou um input" value="vazio">
+		
+		<script>
+			$('h1').html('A biblioteca JQuery está funcionando!')
+		</script>
+	</body>
+</html>
