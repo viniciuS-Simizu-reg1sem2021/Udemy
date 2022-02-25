@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQUERY - Inserindo & Removendo Elementos HTML</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+
+            // $('#lista1').append('<li>Item 4</li>')
+            $('#lista1').prepend('<li>Item 4</li>')
+            $('#lista2').append('<div>Item 4</div>')
+            $('#lista2').before('<p>Eu fui antes após a div</p>')
+            $('#lista2').after('<p>Eu fui inserido após a div</p>')
+
+            $('#linha').after('<p>Eu fui inserido após o hr</p>')
+            $('#linha').remove()
+
+        })
+    </script>
+</head>
+
+<body style="background-color: black; color: white">
+
+    <ul id="lista1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <div id="lista2">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+    <hr id="linha">
+
+</body>
+
+</html>

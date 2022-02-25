@@ -1,0 +1,57 @@
+/* for */
+/* through(incluso) e to(não-incluso) */
+@for $i from 1 through 3 {
+    .item-#{$i} {
+        background: green;
+        margin-bottom: 2px;
+    }
+}
+
+/* while */
+$contador: 1;
+@while $contador <= 5 {
+    .item-#{$contador} {
+        background: orange;
+        margin-bottom: 2px;
+    }
+
+    $contador: $contador + 1;
+}
+
+/* each */
+$contador: 1;
+$lista: green, yellow, red;
+@each $cor in $lista {
+    .item-#{$contador} {
+        background: $cor;
+        margin-bottom: 2px;
+    }
+
+    $contador: $contador + 1;
+}
+
+/* funções */
+$total: 12;
+@function largura-coluna($coluna) {
+    @return percentage($coluna/$total);
+}
+
+@for $i from 1 through $total {
+    .col-#{$i} {
+        width: largura-coluna($i);
+        background: green;
+    }
+}
+
+/* 
+outras funções 
+
+mix(green, orange, 50)
+darken(orange, 50)
+lighten(orange, 40)
+*/
+
+.alerta {
+    background: lighten(orange, 40);
+    color: yellow;
+}

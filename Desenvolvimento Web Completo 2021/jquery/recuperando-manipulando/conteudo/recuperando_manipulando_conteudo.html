@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JQUERY - Recuperando e Manipulando Contéudo HTML</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+
+            console.log($('#div1').html('Eu sou o valor novo'))
+            console.log($('#div1').html('<strong style="color: red">Eu sou um novo valor em negrito vermelho</strong>'))
+            console.log($('#div1').text('<strong style="color: red">Eu sou um novo valor em negrito vermelho</strong>'))
+
+        })
+    </script>
+</head>
+
+<body style="background-color: black; color: white">
+
+    <div id="div1" style="border: solid 1px white; width: 150px; height: 150px">
+        <a href="#">Teste</a>
+        <p>Esse é outro teste</p>
+        <div>Outro teste</div>
+    </div>
+
+    <div id="div2" style="border: solid 1px white; width: 150px; height: 150px">
+        Div 2
+    </div>
+
+</body>
+
+</html>

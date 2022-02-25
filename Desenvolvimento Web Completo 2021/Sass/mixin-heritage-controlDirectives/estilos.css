@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* mixin */
+h1 {
+  color: green;
+  background: black;
+  padding: 10px 5px;
+}
+
+h2 {
+  color: white;
+  background: black;
+  padding: 10px 5px;
+}
+
+/* Herança */
+/* Multiplas diretivas */
+.vermelho {
+  color: red;
+}
+
+.vermelho {
+  background-color: black;
+}
+
+/*
+Encadeamento de diretivas
+Placeholders(%)
+*/
+.erro {
+  color: red;
+}
+
+.erro {
+  background-color: black;
+}
+
+.erro {
+  padding: 10px;
+  border: 1px solid red;
+}
+
+/* Diretivas de controle */
+/* Diretivas de Controle e Mixins */
+body {
+  background: red;
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */
