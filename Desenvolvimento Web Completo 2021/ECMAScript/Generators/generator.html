@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+
+    <style>
+
+        * {
+            font-size: 2rem;
+        }
+
+    </style>
+
+    <!-- <script src="./generator1.js"></script> -->
+
+    <script>
+
+        handleChange = e => {
+            document.getElementById('inputValue').textContent = e.value
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <script src="./generator2.js"></script>
+
+    <div id="root">
+        <button type="button" onclick="acao()">Avançar</button>
+        <label for="resposta">Resposta: </label>
+        <input oninput="handleChange(this)" type="text" id="resposta" />
+        <span id="inputValue"></span>
+    </div>
+
+    <script>
+        document.getElementById('resposta').addEventListener('keypress', e => { e.key === 'Enter' ? acao() : '' })
+    </script>
+
+</body>
+</html>
